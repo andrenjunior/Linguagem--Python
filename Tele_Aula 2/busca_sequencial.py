@@ -11,5 +11,5 @@ def busca_sequencial (lista, elemento):
     return encontrado
 
 testelista = [2, 10, 8, 15, 18, 20, 1]
-print(busca_sequencial(testelista, 5))
-print(busca_sequencial(testelista, 15))                    
+print(busca_sequencial(testelista, 8))
+print(busca_sequencial(testelista, 21))                    
