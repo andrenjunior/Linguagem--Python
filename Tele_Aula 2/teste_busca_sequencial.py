@@ -1,19 +1,15 @@
-def busca_sequencial (v, x):
-    #Contador criado
-    i = 0 
-    #laço para percorrer o vetor
-    while i < len(v):
-        if v[i] == x:
-            return i #Se o elemento for encontrado o return finaliza aqui
-        i += 1 #Contador incrementado dentro do laço de repetição
-    return -1  #Se não for encontrado o elemento o laço de repetição  para aqui.       
-
-
-vetor = list(range(0,100)) # variável criada para criar a lista sequencial.
-print(vetor)
-
-posicao = busca_sequencial(vetor, 98) #Variável criada para determinar a posição do elemtno.
-if posicao >= 0:
-    print('O elemento foi encontrado na posição {}'.format(posicao))
-else:
-    print('O elemento não foi encontrado')    
+def binary_search (array, item, inicio=0, fim=None):
+    if fim is None:
+        fim = len(array)-1
+    if inicio <= fim:
+        m = (inicio + fim)//2  # Divisão inteira
+        if array[m] == item:
+            return m
+        if item < array[m]:
+            return  binary_search(array, item, inicio, m-1)   
+        else:
+            return  binary_search(array, item, m+1, fim)
+    return None
+    lista = [2, 3, 4]     
+    binary_search(lista, 4,)  
+    print(lista)     
