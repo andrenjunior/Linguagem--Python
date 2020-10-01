@@ -1,11 +1,6 @@
-class PrimeiraClasse():
-    nome = None
+class primeiraclasse:
+    def imprimir_mensagem(self, nome):
+        print(f'Olá {nome}, seja bem vindo!!')
 
-    def imprimir_mensagem(self):
-        print('Olá seja bem vindo!!')
-        # Objeto.atibuto 
-objeto1 = PrimeiraClasse()  
-objeto1.nome = 'Aluno 1'
-
-print(objeto1.nome)
-objeto1.imprimir_mensagem()        
+objeto1 = primeiraclasse()
+objeto1.imprimir_mensagem('André')              

@@ -1,13 +1,16 @@
 class FuncionarioTecnico:
-    def __init__(self, status):
+    def __init__(self, status,nivel):
         self.status = status
+        self.nivel = nivel
 
-nivel = 'técnico'
-func1 = FuncionarioTecnico('Ativo')
-func2 = FuncionarioTecnico('Licença Mestrado')
+    def função (self):
+        print('Parabéns pela função!')
 
-print(func1.nivel)
-print(func2.nivel)
-print(func1.status)
-print(func2.status)
+    def profissional (self):
+        print('Profissional Técnico!!')
+
+func1 = FuncionarioTecnico('Ativo', 'Técnico')
+func1.função()
+func1.profissional()
+
 
