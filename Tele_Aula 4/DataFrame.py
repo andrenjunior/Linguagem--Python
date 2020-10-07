@@ -3,7 +3,7 @@ import numpy as np
 
 df = pd.DataFrame  ({
 'nome' : ['André', 'Junior', 'Nascimento'],
-'Idade': [38, 37, 36],
+'idade': [38, 37, 36],
 'cidade': ['RJ','SP','MG']
 })
 
@@ -15,3 +15,7 @@ v = pd.Series(vetor)
 
 print(vetor)
 print(v)
+print('\n\n')
+print(df.nome) # retorna somente com a coluna nome 
+print('\n\n')
+print(df.idade.mean()) # Retorna com a média de idade
